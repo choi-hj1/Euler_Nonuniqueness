@@ -1,0 +1,182 @@
+{
+  "schema_version": 2,
+  "work_title": "Nonuniqueness of Solutions to 2D Incompressible Euler Equations with Unbounded Vorticity",
+  "publication": {
+    "identity": "The containing Git commit identifies this certificate and its sources.",
+    "parent_commit": "9cfb680e22c66013943c36834d483ad1b69e0ecd",
+    "branch": "proof/theorem-1-1",
+    "pull_request": 1,
+    "pull_request_state_at_verification": "draft, unmerged"
+  },
+  "closed_declaration": {
+    "name": "EulerNonuniqueness.theorem11",
+    "type": "EulerNonuniqueness.Theorem11",
+    "hypotheses": [],
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "independent_target": "EulerNonuniquenessChallenge.Target",
+    "target_bridge": "EulerNonuniquenessComparator.target_iff"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.19.0",
+    "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "mathlib_input_revision": "v4.19.0",
+    "pins": {
+      "lean-toolchain": {
+        "path": "lean-toolchain",
+        "bytes": 25,
+        "sha256": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
+      },
+      "lake-manifest.json": {
+        "path": "lake-manifest.json",
+        "bytes": 3110,
+        "sha256": "e880e4f557d641a0ad2befd8cabb2c61c7a13fe88942879c16a7d6a744bf9ece"
+      }
+    }
+  },
+  "logical_target_pins": {
+    "EulerNonuniqueness/Definitions.lean": {
+      "sha256": "ea09063920f58126639f3fa716a100acf72c69af233993156663f0b1a32b7b93",
+      "normalized_logical_sha256": "a968c5549f312652914deb43a1c3d3953947291b0ef53db008960d7b888ea495"
+    },
+    "EulerNonuniqueness/Statement.lean": {
+      "sha256": "b114771e37bcedde02f2fd4abb1088e2e51f660089a32d07cdd3e0a25cdf796f",
+      "normalized_logical_sha256": "1bbd060a7d785448b6348f22b0b5f5924f5ca0d43935e22ed8c185e5e6066ee0"
+    },
+    "Challenge.lean": {
+      "sha256": "ff88446563ba532a08b9e15893b8d12a3802c40f9777bcb6782861e62674fe47",
+      "normalized_logical_sha256": "019605c38123af4f7ce9fcaa1a5ff5b356cd0fa7e9e0abc1f76f8876d3cd6679"
+    },
+    "Comparator.lean": {
+      "sha256": "9cfab626b2d618cb35f50738ff7dbb9eced456ef1a19cde14eae20c125d01d78",
+      "normalized_logical_sha256": "59e02c8b7fa5c3d3f68f0f0ad5cbda14b5b7369b3ddce24265a1f58f55fd493c"
+    }
+  },
+  "source_identity": {
+    "tracked_lean_sources": 3370,
+    "all_normalized_logical_code_equal_to_parent": true,
+    "normalized_logical_sha256": "afce09225906282f73f5d88ce35858128cfea3d9b6c35a833879009ca210e5c7",
+    "raw_source_inventory_sha256": "b6f782324d87658cc411fb10b3ab9c4401b06fbdfe828333adfb360c4666ed41",
+    "algorithm": "Sorted path + NUL + per-file normalized digest + NUL; raw inventory substitutes file bytes. Normalization removes comments and collapses whitespace outside preserved string literals.",
+    "comment_only_edits": [
+      "Audit.lean",
+      "Challenge.lean",
+      "EulerNonuniqueness/Main.lean",
+      "EulerNonuniqueness/Statement.lean",
+      "ProofAudit.lean"
+    ],
+    "complete_inventory_provenance": {
+      "path": "euler-publication-polish-selection.json",
+      "kind": "local_audit_artifact",
+      "bytes": 235125,
+      "sha256": "e1a57699033e91bf6930d0cec2d157c259f12004adb5150902fd14d0b91ae42d"
+    }
+  },
+  "direct_proof_sources": {
+    "EulerNonuniqueness/Theorem11.lean": {
+      "path": "EulerNonuniqueness/Theorem11.lean",
+      "bytes": 394,
+      "sha256": "d74034b2e30969f35d8fea3db98064832bf66cac14d3fcdb7d811fc0f43f9a11"
+    },
+    "EulerNonuniqueness/Section7/ActualApproximationExistence.lean": {
+      "path": "EulerNonuniqueness/Section7/ActualApproximationExistence.lean",
+      "bytes": 9645,
+      "sha256": "affa26d5c86890bc8ea7f6f2e3233e8dc07e4587411efde3f36cfc98acc4e3df"
+    },
+    "FullVerification.lean": {
+      "path": "FullVerification.lean",
+      "bytes": 482,
+      "sha256": "e2fbbdd36010bd7d74fec31843b67882c68847498aa1baeafe52d9763418c1ca"
+    }
+  },
+  "verification": {
+    "status": "passed",
+    "exit_code": 0,
+    "command": "bash verify.sh --full",
+    "artifacts": {
+      "build/lake-build.txt": {
+        "path": "build/lake-build.txt",
+        "bytes": 398498,
+        "sha256": "4dd79f008dc1266f958ca7b71ee51bed0f90eac45e2dfd85f04de1d836f6c067"
+      },
+      "build/axioms.txt": {
+        "path": "build/axioms.txt",
+        "bytes": 1019099,
+        "sha256": "e1c1f0df496d7c09caa40f90cb2b712e3462a9cc2c2713119fdaa60d47f041b7"
+      },
+      "build/proof-dependencies.txt": {
+        "path": "build/proof-dependencies.txt",
+        "bytes": 96,
+        "sha256": "fd942dab1c6f7b7307be1a862169382612015c9ae63df3ad3cedb78dfc022680"
+      },
+      "build/full-verification.txt": {
+        "path": "build/full-verification.txt",
+        "bytes": 90,
+        "sha256": "0121b9d84361dd18a68cd27ccfb8de41c614709b379bb6be36056a51e49e90f3"
+      },
+      "build/publication-polish-full-verification.txt": {
+        "path": "build/publication-polish-full-verification.txt",
+        "bytes": 412727,
+        "sha256": "3daf6ea7f737f51d768d73247b5f0ed713ab0fa95b9599f4972a3274bc3628ce"
+      }
+    },
+    "batch_plan": {
+      "path": "build/audit-batches/fresh-rht1b9xu/plan.json",
+      "bytes": 625019,
+      "sha256": "944ea5dc28a73b63e1b6b17ed8b0c73a7657e23838bfcfee8bcdc780612d2657"
+    },
+    "batch_completion": {
+      "path": "build/audit-batches/fresh-rht1b9xu/complete.json",
+      "bytes": 630168,
+      "sha256": "60e1feef7f9da70b0e244102ec5aa6d90afd65b562e9d39a3177b3c7ec8093a6"
+    },
+    "axiom_reports": 7606,
+    "unique_declarations": 7606,
+    "ordered_audit_commands": 7621,
+    "fresh_lean_processes": 31,
+    "fresh_axiom_batches": 30,
+    "reused_audit_outputs": 0,
+    "proof_roots": 15091,
+    "transitive_safe_declarations": 74099
+  },
+  "verification_harness": {
+    "certificate_generator": {
+      "path": "euler_publication_polish_certificate.py",
+      "kind": "local_audit_artifact",
+      "bytes": 14265,
+      "sha256": "4689814a6ec2a825dd9799b483c139c0d8cb4753d48df1860d4be70dbc3242cc"
+    },
+    "snapshot_generator": {
+      "path": "euler_publication_polish_checkpoint.py",
+      "kind": "local_audit_artifact",
+      "bytes": 3487,
+      "sha256": "dcc964b399ebd832ccd0da77d2e5beac456b53519acdc51c4945388de12d9ad6"
+    },
+    "source_guard": {
+      "path": "scripts/check_audit.py",
+      "bytes": 7979,
+      "sha256": "e6a66efeb9539568db7899c4328f2ed823e30f54673064fd0bf628ff2628075b"
+    },
+    "fresh_batch_runner": {
+      "path": "scripts/run_axiom_audit.py",
+      "bytes": 9501,
+      "sha256": "6ea01baf7d42f8e8c127be2f3c5009b2c5e190aa850baec2a2dbd76cbc0f5fa5"
+    },
+    "entrypoint": {
+      "path": "verify.sh",
+      "bytes": 1095,
+      "sha256": "057c98c7affd294a9fceae94fb6cdebc7489956ac6fa20716a14218e0c29d65d"
+    }
+  },
+  "scope": {
+    "result": "Closed Theorem11 and independent Challenge.Target",
+    "construction": "The existence construction uses alpha = 1/2; this does not assert the all-alpha Proposition 5.1 specification or additional growth asymptotic remarks.",
+    "trust": "The standard three axioms apply to the reported theorem proofs. The transitive audit checks proof/type dependencies of actual project theorem roots, including opaque bodies; it does not claim the entire compiled environment has no unsafe compiler/runtime helper metadata outside that closure.",
+    "reuse": "Every Audit.lean output command was executed in order in fresh Lean processes; ordinary compiled import artifacts may be reused.",
+    "editorial": "Publication title, navigation, and five comment-only Lean edits preserve all 3370 logical sources. source/manuscript.tex was removed from publication inputs; no manuscript file or hash is required or certified here.",
+    "history": "This schema replaces stale current raw-file pins in the earlier certificate without changing historical proof evidence. No prior global diagnostic counts are claimed as a fresh whole-environment audit."
+  }
+}
